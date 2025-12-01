@@ -1,6 +1,13 @@
 # Prerequisites
 *.d
 
+*.vscode
+
+*.json
+
+*.dSYM
+*.yml
+
 # Compiled Object files
 *.slo
 *.lo
@@ -39,3 +46,4 @@
 
 # debug information files
 *.dwo
+.gitignore
