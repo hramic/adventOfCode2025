@@ -33,9 +33,16 @@ int main(){
     while(it != end){
         std::string komanda = it->str();
         int korak = ktoi(komanda);
-        if(komanda[0] == 'R') pozicija = (pozicija + korak) % 100;
-        else pozicija = (pozicija - korak + 100) % 100;
-        if(pozicija == 0) lozinka++;
+
+        if(komanda[0] == 'R'){
+            lozinka += int((pozicija + korak) / 100);
+            pozicija = (pozicija + korak) % 100;
+        }
+        else{
+            lozinka += int((korak - pozicija + 99) / 100);
+            pozicija = ((pozicija - korak) % 100 + 100) % 100;
+        }
+
         it++;
     }
 
