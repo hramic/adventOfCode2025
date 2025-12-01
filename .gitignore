@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 
+*.DS_Store
+
 *.vscode
 
 *.json
@@ -57,3 +59,4 @@ day1/day1_part2
 day1/day1_part2
 day1/.DS_Store
 .DS_Store
+day1/.DS_Store
